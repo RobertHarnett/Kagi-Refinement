@@ -1,0 +1,92 @@
+/* Remove Search Box Shadow */
+.search-form .search-input-container,
+.s-f-w.--active .search-input-container {
+    box-shadow: none;
+}
+
+/* Increase Search Box Padding */
+.search-form-container {
+    padding: 0px 20px;
+}
+
+/* Shrink search box border (Only makes a differance on the mobile view) */
+.search-form .search-input-container {
+    border: 1px solid var(--color-search-input-border);
+}
+
+/* Remove search setting buttons fill and border */
+.filter-item,
+.dropdown.filter-item:hover {
+    border: none !important;
+    background-color: transparent;
+}
+
+/* colour all search settings on hover. Including 'More' and 'Quick Answer' buttons which currently do nothing on hover by default */
+.k_ui_dropdown_first_item:hover,
+.keyword-notice a:hover,
+.filter-item:hover,
+._0_summarize_link a:hover,
+.dropdown .dd-toggle-label:hover {
+    color: var(--primary-hover);
+}
+
+/* Hide search time and number of results, moving what's left onto the same line. */
+.num_results {
+    display: none;
+}
+.top-panel {
+    flex-direction: row-reverse;
+    margin-bottom: 16px;
+}
+
+/* Set font to system font */
+#help_modal .section-title,
+.btn.--lg,
+.button-primary,
+.font-lufga,
+.quick-settings-header__title,
+.search-form #searchFormSubmitBtn,
+.search-form .search-input-title,
+.inlineHeader,
+body,
+.wikipediaResult .wikipediaFullPageLink {
+    font-family: system-ui, sans-serif;
+}
+
+/* Remove underlines on non-hovered text */
+.__sri-title .__sri_title_link {
+    border-bottom: 1px solid var(--app-bg);
+}
+
+/* Add spacing in between wiki image and map, also round corners */
+.wiki-top-row-l {
+    padding-right: 8px;
+}
+.static-map-image,
+.wikipediaResult .wiki-image.--map.img img {
+    border-radius: 5px;
+}
+
+/* Hide vertical divider between wikibox info */
+.wikipediaTable {
+    border-top: none;
+}
+
+/* Increase horizontal padding, only really effects mobile view. */
+.search-result,
+.sri-group {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Hide divider between search items on mobile */
+:root {
+    --m_sri_gap_color: var(--app-bg);
+}
+
+/* Hide the share buttons & footer*/
+._0_share_url_footer,
+._0_share_search_button,
+footer {
+    display: none;
+}
