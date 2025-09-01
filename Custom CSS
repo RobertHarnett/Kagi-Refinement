@@ -54,7 +54,8 @@ body,
 }
 
 /* Remove underlines on non-hovered text */
-.__sri-title .__sri_title_link {
+.__sri-title .__sri_title_link,
+.wikipediaResult .wiki-title a {
     border-bottom: 1px solid var(--app-bg);
 }
 
